@@ -11,13 +11,10 @@ function validar() {
     }
 }
 
-function cargarDatosAvion() {
-    // Capturamos los parámetros que viajan de forma oculta en la URL (?avion=...&precio=...)
+function cargarDatosAvion() { 
     var parametros = new URLSearchParams(window.location.search);
     var nombreAvion = parametros.get('avion');
     var precioAvion = parametros.get('precio');
-
-    // Si los datos llegaron bien, JS los inyecta en los textos correspondientes de la pantalla
     if (nombreAvion && precioAvion) {
         document.getElementById("titulo-avion").innerHTML = nombreAvion;
         document.getElementById("precio-base").innerHTML = precioAvion;
@@ -37,11 +34,7 @@ function calcularCosto() {
         document.getElementById("horas").value = 1; 
         return; 
     }
-
-    
-    var cotizacionDolar = 1395.50; 
-
-    
+    var cotizacionDolar = 1395.50;  
     var totalDolares = precioPorHora * horas;
     var totalPesos = totalDolares * cotizacionDolar;
 
