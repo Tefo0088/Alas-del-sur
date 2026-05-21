@@ -4,7 +4,7 @@ function validar() {
     
     if (usuario == "Tefo" && contraseña == "tefo1234") {
 
-        window.location.href = "reservas.html";
+        window.location.href = "https://tefo0088.github.io/Alas-del-sur/reservas.html";
     } else {
        
         alert("Permiso denegado: Usuario o contraseña incorrectos. Por favor, verifique sus datos.");
