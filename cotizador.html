@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alas del Sur - Cotizador de Horas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="cargarDatosAvion()" id="fondo-cotizador">
+    <header>
+        <h1>Cotizador Oficial de Vuelo</h1>
+        <p>Alas del Sur - Tarifas actualizadas al tipo de cambio</p>
+    </header>
+
+    <div id="contenedor-cotizador">
+        <h2 id="titulo-avion">Aeronave Seleccionada</h2>
+        <p>Precio base por hora: <strong id="precio-base">0</strong> USD</p>
+        
+        <br>
+        <p>Horas a volar (Mínimo 1 hora):</p>
+        <input type="number" id="horas" min="1" value="1">
+        <br><br>
+        
+        <button onclick="calcularCosto()">CALCULAR PRESUPUESTO</button>
+        
+        <div id="bloque-resultado">
+            <h3 id="resultado-usd"></h3>
+            <h3 id="resultado-ars"></h3>
+        </div>
+        
+        <br>
+        <button onclick="window.location.href='reservas.html'" style="background-color: #555;">VOLVER AL HANGAR</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

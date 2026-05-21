@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alas del Sur - Registro de Socios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="fondo-registro">
+    <header>
+        <h1>Asociate a Alas del Sur</h1>
+        <p>Sumate a nuestra comunidad aeronáutica y empezá a volar.</p>
+    </header>
+
+    <div id="contenedor-registro">
+        <h2>Solicitud de Afiliación</h2>
+        <br>
+        <p>Nombre Completo: <input type="text" id="reg-nombre" placeholder="Stefano Tiziano Alessandroni"></p>
+        <p>DNI / Pasaporte: <input type="text" id="reg-dni" placeholder="48..."></p>
+        <p>Fecha de Nacimiento: <input type="date" id="reg-fecha" value="2008-02-18"></p>
+        <p>Correo Electrónico: <input type="email" id="reg-correo" placeholder="piloto@email.com"></p>
+        <p>Teléfono: <input type="tel" id="reg-telefono" placeholder="+54 358 ..."></p>
+        <p>¿Posee Licencia de Vuelo?
+            <select id="reg-licencia">
+                <option value="no">No (Alumno Piloto)</option>
+                <option value="ppa">Piloto Privado de Avión (PPA)</option>
+                <option value="pca">Piloto Comercial (PCA)</option>
+                <option value="instructor">Instructor de Vuelo</option>
+            </select>
+        </p>
+        <br>
+        <button onclick="registrarSocio()">ENVIAR SOLICITUD</button>
+        <br><br>
+        <button onclick="window.location.href='index.html'" style="background-color: #555;">VOLVER AL INICIO</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
